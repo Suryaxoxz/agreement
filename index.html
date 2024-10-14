@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agreement Popup</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> 
+</head>
+<body>
+    <div class="container">
+        <h1>Wanna be my boyfriend?</h1>
+        <div class="button-group">
+            <button type="submit" class="btn" onclick="window.location.href='agrred.html'">YES</button>
+            <button type="button" class="btn" onclick="window.location.href='reconsider.html'">NO</button>
+        </div>
+        <div class="popup" id="popup">
+            <img src="img/tick.png" alt="Tick Icon">
+            <h2>Thank You!</h2>
+            <p>Your details have been successfully submitted. Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>  
+    </div>
+</body>
+</html>

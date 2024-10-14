@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container, .celebration-container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #485563, #29323c);
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-group {
+    display: flex; /* Use flexbox to position buttons next to each other */
+    gap: 20px; /* Space between the buttons */
+}
+
+.btn {
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Celebration Page Styles */
+.celebration-container {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+}
+
+.stickers {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sticker {
+    width: 80px; /* Adjust size as needed */
+    margin: 0 10px; /* Space between stickers */
+    animation: float 2s infinite ease-in-out; /* Animation for floating effect */
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Adjust height of float */
+    }
+}
+
+/* Popup styling (only needed for the main page) */
+.popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 60px;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1000;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #e02189;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+/* Floating Balloon Styles */
+.floating-balloon {
+    position: absolute;
+    width: 100px; /* Adjust the size of the balloons */
+    animation: float 3s infinite ease-in-out; /* Floating animation */
+}
+
+.left {
+    left: 10%; /* Position the left balloon */
+    bottom: 50%; /* Adjust vertical position */
+}
+
+.right {
+    right: 10%; /* Position the right balloon */
+    bottom: 50%; /* Adjust vertical position */
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Adjust height of float */
+    }
+}
